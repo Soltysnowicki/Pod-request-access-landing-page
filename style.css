@@ -1,0 +1,105 @@
+:root {
+  --green: #54e6af;
+  --dark-blue: #2c344b;
+  --very-dark-blue: #121725;
+  --white: #ffffff;
+  --dark-grey: #5a668a;
+  --light-grey: #c2cbe5;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("assets/mobile/image-host.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.9;
+  font-family: "Chivo";
+  font-size: 15px;
+}
+main {
+  background-color: var(--very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pod-logo {
+  margin-top: 62px;
+}
+.cta {
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 27px;
+  margin-top: 57px;
+  line-height: 38px;
+  color: var(--green);
+}
+.every {
+  color: var(--white);
+}
+.description {
+  line-height: 25px;
+  color: var(--light-grey);
+  text-align: center;
+  width: 327px;
+  margin-top: 16px;
+  font-weight: 300;
+}
+.logo-wrapper {
+  width: 315px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.6;
+  margin-top: 33px;
+}
+
+.partner-logo-1 {
+  width: 56px;
+  height: 17px;
+}
+.partner-logo-2 {
+  width: 45px;
+  height: 17px;
+}
+.partner-logo-3 {
+  width: 73px;
+  height: 11px;
+}
+.partner-logo-4 {
+  width: 77px;
+  height: 15px;
+}
+#email {
+  margin-top: 48px;
+  width: 327px;
+  height: 46px;
+  border-radius: 28px;
+  background-color: var(--dark-blue);
+  border: none;
+}
+::placeholder {
+  color: var(--white);
+  opacity: 0.5;
+  text-align: center;
+}
+.request input {
+  margin-top: 16px;
+  width: 327px;
+  height: 46px;
+  border-radius: 28px;
+  border: none;
+  background-color: var(--green);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 200px;
+}
+#tablet-image {
+  display: none;
+}
+#desktop-image {
+  display: none;
+}
