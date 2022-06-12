@@ -29,6 +29,11 @@ main {
 #pod-logo {
   margin-top: 62px;
 }
+.publish-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .cta {
   text-align: center;
   font-weight: 300;
@@ -49,12 +54,20 @@ main {
   margin-top: 16px;
   font-weight: 300;
 }
-.logo-wrapper {
+.logo-wrapper-1 {
   width: 315px;
   display: flex;
   justify-content: space-between;
   opacity: 0.6;
   margin-top: 33px;
+}
+.logo-wrapper-2 {
+  width: 315px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.6;
+  margin-top: 33px;
+  display: none;
 }
 
 .partner-logo-1 {
@@ -80,11 +93,12 @@ main {
   border-radius: 28px;
   background-color: var(--dark-blue);
   border: none;
+  text-align: center;
 }
+
 ::placeholder {
   color: var(--white);
   opacity: 0.5;
-  text-align: center;
 }
 .request input {
   margin-top: 16px;
@@ -97,9 +111,109 @@ main {
   font-size: 14px;
   margin-bottom: 200px;
 }
-#tablet-image {
-  display: none;
-}
-#desktop-image {
-  display: none;
+
+@media only screen and (min-width: 500px) {
+  body {
+    background-image: none;
+    background-color: var(--very-dark-blue);
+    opacity: 1;
+    font-family: "Chivo";
+    font-size: 15px;
+  }
+  main {
+    background-image: url("assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: top right;
+    background-color: transparent;
+    display: block;
+    height: 767px;
+  }
+  #pod-logo {
+    margin-top: 62px;
+    margin-left: 39px;
+  }
+  .publish-card {
+    width: 625px;
+    height: 509px;
+    margin-top: 150px;
+    margin-left: 39px;
+    background-color: var(--very-dark-blue);
+  }
+  .cta {
+    text-align: left;
+    padding-top: 93px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .description {
+    line-height: 28px;
+    font-size: 18px;
+    text-align: left;
+    width: 445px;
+    margin-top: 31px;
+  }
+  .logo-wrapper-1 {
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6;
+    margin-top: 33px;
+    display: none;
+  }
+  .logo-wrapper-2 {
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6;
+  }
+
+  .partner-logo-1 {
+    width: 56px;
+    height: 17px;
+  }
+  .partner-logo-2 {
+    width: 45px;
+    height: 17px;
+  }
+  .partner-logo-3 {
+    width: 73px;
+    height: 11px;
+  }
+  .partner-logo-4 {
+    width: 77px;
+    height: 15px;
+  }
+  #email {
+    margin-top: 48px;
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    background-color: var(--dark-blue);
+    border: none;
+    text-align: center;
+  }
+
+  ::placeholder {
+    color: var(--white);
+    opacity: 0.5;
+  }
+  .request input {
+    margin-top: 16px;
+    width: 327px;
+    height: 46px;
+    border-radius: 28px;
+    border: none;
+    background-color: var(--green);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 200px;
+  }
+  #tablet-image {
+    display: none;
+  }
+  #desktop-image {
+    display: none;
+  }
 }
