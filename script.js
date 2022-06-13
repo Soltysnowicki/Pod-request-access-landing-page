@@ -1,5 +1,4 @@
 const error_message = document.querySelector(".error");
-const email = document.querySelector("#email");
 const submit = document.querySelector(".request");
 
 submit.addEventListener("click", (e) => {

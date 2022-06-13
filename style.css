@@ -1,3 +1,4 @@
+/*color variables*/
 :root {
   --green: #54e6af;
   --dark-blue: #2c344b;
@@ -6,10 +7,12 @@
   --dark-grey: #5a668a;
   --light-grey: #c2cbe5;
 }
+/*margin & padding formatting*/
 * {
   margin: 0;
   padding: 0;
 }
+/*body formatting*/
 body {
   background-image: url("assets/mobile/image-host.jpg");
   background-repeat: no-repeat;
@@ -29,6 +32,7 @@ main {
 #pod-logo {
   margin-top: 62px;
 }
+/*hero component formatting*/
 .publish-card {
   display: flex;
   flex-direction: column;
@@ -54,6 +58,7 @@ main {
   margin-top: 16px;
   font-weight: 300;
 }
+/*mobile logo wrapper formatting*/
 .logo-wrapper-1 {
   width: 315px;
   display: flex;
@@ -62,6 +67,7 @@ main {
   margin-top: 33px;
   align-items: center;
 }
+/*tablet & desktop logo wrapper formatting*/
 .logo-wrapper-2 {
   width: 315px;
   display: flex;
@@ -70,7 +76,6 @@ main {
   margin-top: 33px;
   display: none;
 }
-
 .partner-logo-1 {
   width: 56px;
   height: 17px;
@@ -87,6 +92,7 @@ main {
   width: 77px;
   height: 15px;
 }
+/*input form formatting*/
 #email {
   margin-top: 48px;
   width: 327px;
@@ -97,11 +103,6 @@ main {
   padding: 1em;
 }
 
-.error {
-  color: red;
-  position: relative;
-  bottom: 470px;
-}
 ::placeholder-shown {
   opacity: 0.5;
 }
@@ -120,7 +121,13 @@ main {
 .request input:hover {
   opacity: 0.7;
 }
-
+/*error message formatting*/
+.error {
+  color: red;
+  position: relative;
+  bottom: 470px;
+}
+/*hide class for error message*/
 .hide {
   display: none;
 }
@@ -231,6 +238,7 @@ main {
     left: 20px;
   }
 }
+
 /*desktop media breakpoint*/
 @media only screen and (min-width: 1200px) {
   body {
